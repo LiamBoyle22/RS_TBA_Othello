@@ -1,0 +1,4 @@
+RQ1. How accurately can a combined audio, video and script-alignment pipeline assign character names to transcript segments when a single actor plays up to four roles?
+RQ2. Which signals (voice, on-screen appearance, script position, scene context) contribute most to correct character attribution, and where does each fail?
+RQ3. How does the reworked Othello change the portrayal of race, gender and other social norms relative to Shakespeare's text, measured by what is said, who says it, and to whom?
+RQ4. Did the rework reduce the racial harshness the playwright objected to, and did it introduce or intensify other problems such as harsh language and misogyny?

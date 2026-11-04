@@ -16,4 +16,4 @@ print(f" {f.name}: {len(df)} rows, {speakers} speakers")
 
 all_df = pd.concat(frames, ignore_index=True)
 print(all_df.shape, list(all_df.columns))
-all_df.to_csv(PRIVATE / "segemnts_combined.csv", index=FALSE)
+all_df.to_csv(PRIVATE / "segments_combined.csv", index=False)
