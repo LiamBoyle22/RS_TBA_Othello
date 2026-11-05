@@ -12,5 +12,15 @@ for video, vdf in df.groupby("source_file"):
     speakers = vdf["SpeakerCode"].tolist()
     texts = vdf["text"].fillna("").str.lower().tolist()
     for i, text in enumerate(texts):
-        #TO DO
+        found = [n in n in NAMES if n in text]
+        for name in found:
+            if i > 0:
+                counts[(video, speakers[i-1], name)] +=1
+            if i < len(speakers) - 1:
+                counts[(video, speakers[i-1], name)] +=1
+
+            out = pd.DataFrame([(v,s,n,c) for (v,s,n), c in counts.items()],
+                            columns = ["video", "speaker", "name", "hits"])
+            print(out.sort_values("hits", ascending= False).head(40).to_string(index=False))
+                    #TO DO
         pass
